@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+    <title>Moviemania | Simple and fast movie downloads</title>
+</head>
+
+<body>
+    <header>
+        <img src="moviemania.png" alt="logo">
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="">About</a>
+            <a href="">Genre</a>
+            <a href="">How to download</a>
+            <a href="">Contact</a>
+        </nav>
+
+        <div class="search-wrapper">
+            <input type="search" id="search">
+            <label for="search">
+                <ion-icon name="search-outline"></ion-icon>
+            </label>
+        </div>
+        <span>
+            <ion-icon name="menu-outline"></ion-icon>
+        </span>
+    </header>
+
+    <main>
+        <section>
+            <h1>A Family Affair</h1>
+            <div class="container">
+                <img src="images (1).jpeg">
+
+            </div>
+            <span>
+                <iframe width="70%" src="https://www.youtube.com/embed/Ytc2eifpiuQ?si=M1yvNM9xeEXeRgsh"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-
+                cross-origin" allowfullscreen></iframe>
+            </span>
+            <a href="">
+                <h3>Download</h3>
+                <ion-icon name="download-outline"></ion-icon>
+            </a>
+
+        </section>
+        <!-- <a href="video.mp4" download="video">download</a> -->
+    </main>
+
+    <footer>
+        <div class="container">
+            <div>
+                <h2>About us</h2>
+                <p>
+                    <!--Moviemania is a free and fast movie downloading platform that prioritizes
+                 simplicity and user experience.-->
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam modi
+                    velit a, alias vitae, quod adipisci facilis amet dolorum, ipsum officia
+                    ullam labore aliquid? Alias pariatur possimus hic sint qui.
+                </p>
+            </div>
+            <div>
+                <h2>Links</h2>
+                <a href="index.html">Home</a> <br>
+                <a href="">Articles</a> <br>
+                <a href="">How to download</a><br>
+                <a href="">Contact the developer</a>
+            </div>
+            <div class="links">
+                <h2>Follow us</h2>
+                <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                
+            </div>
+        </div>
+        <h3>Developed and maintained by Monarch Creative Hub</h3>
+        <h4>© Moviemania 2024 | All rights reserved</h4>
+    </footer>
+</body>
+<style>
+    h1 {
+        font-size: 30px;
+        margin: 18px 0;
+    }
+
+    section img {
+        margin-top: 20px;
+        width: 80%;
+    }
+
+    section span {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    iframe {
+        display: block;
+        margin: 0 auto;
+    }
+
+    main section a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #fff;
+        background-color: #005067;
+        font-size: 25px;
+        justify-content: center;
+        margin-top: 20px;
+        padding: 10px 15px;
+        
+    }
+
+    main section a h3 {
+        font-size: 2rem;
+        background-color: transparent;
+        display: inline;
+    }
+
+    main section a ion-icon {
+        background-color: transparent;
+        padding: 4px 4px 4px 10px;
+    }
+
+    @media only screen and (min-width:950px) {
+        main section a {
+            padding: 15px;
+            margin: 20px 300px;
+        }
+        
+    }
+    @media only screen and (min-width:650px) {
+        iframe {
+            height: 400px;
+        }
+    }
+</style>
+
+</html>
