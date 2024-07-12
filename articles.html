@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/15fa915322.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <title>Moviemania | Simple and fast movie downloads</title>
+</head>
+
+<body>
+    <header>
+        <img src="moviemania.png" alt="logo">
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="">About</a>
+            <a href="articles.html">Articles</a>
+            <a href="">How to download</a>
+            <a href="">Contact</a>
+        </nav>
+        <div class="searcher">
+            <div class="search-wrapper">
+                <input type="search" id="input-box">
+                <label for="search">
+                    <ion-icon name="search-outline"></ion-icon>
+                </label>
+            </div>
+            <div class="result-box">
+
+            </div>
+        </div>
+        <span>
+            <ion-icon name="menu-outline" onclick="openNav()"></ion-icon>
+        </span>
+        <div class="dropdown" id="dropdown">
+            <span onclick="closeNav()">&times;</span>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="articles.html" class="active">Articles</a></li>
+            <li><a href="">How to download</a></li>
+            <li><a href="">Contact</a></li>
+            <div class="links">
+                <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="articles">
+            <a href="articlecity.html">
+                <img src="Untitled-1.jpg">
+                <h3>Top 10 in-demand Freelancing gigs of 2024</h3>
+            </a>
+            <a href="articlecity.html">
+                <img src="Untitled-2.jpg">
+                <h3>5 african cities with the highest GDP</h3>
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div>
+                <h2>About us</h2>
+                <p>
+                    <!--Moviemania is a free and fast movie downloading platform that prioritizes
+                 simplicity and user experience.-->
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam modi
+                    velit a, alias vitae, quod adipisci facilis amet dolorum, ipsum officia
+                    ullam labore aliquid? Alias pariatur possimus hic sint qui.
+                </p>
+            </div>
+            <div>
+                <h2>Links</h2>
+                <a href="index.html">Home</a> <br>
+                <a href="">Articles</a> <br>
+                <a href="">How to download</a><br>
+                <a href="">Contact the developer</a>
+            </div>
+            <div class="links">
+                <h2>Follow us</h2>
+                <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+
+            </div>
+        </div>
+        <h3>Developed and maintained by Monarch Creative Hub</h3>
+        <h4>© Moviemania 2024 | All rights reserved</h4>
+    </footer>
+    <script src="autocomplete.js"></script>
+</body>
+
+</html>

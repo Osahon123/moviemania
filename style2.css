@@ -1,0 +1,35 @@
+.articlepage {
+    display: grid;
+    place-items: center;
+}
+.articlepage div {
+    margin: 10px ;
+}
+.articlepage img {
+    width: 90%;
+}
+.articlepage h1 {
+    text-decoration: none;
+    margin: 20px 0;
+}
+.articlepage h2 {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.articlepage p {
+    font-style: italic;
+    margin: 10px 0;
+}
+.articlepage h3 {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #005067;
+}
+.articlepage li {
+    margin: 10px 5px;
+    font-size: 0.9rem;
+}
+.articlepage h4 {
+    text-align: left;
+    font-weight: 400;
+}
