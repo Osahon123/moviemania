@@ -17,32 +17,61 @@
         <img src="moviemania.png" alt="logo">
 
         <nav>
-            <a href="index.html">Home</a>
+            <a href="index.html" class="active">Home</a>
             <a href="">About</a>
-            <a href="">Genre</a>
+            <a href="articles.html">Articles</a>
             <a href="">How to download</a>
             <a href="">Contact</a>
         </nav>
 
-        <div class="search-wrapper">
-            <input type="search" id="search">
-            <label for="search">
-                <ion-icon name="search-outline"></ion-icon>
-            </label>
+        <div class="searcher">
+            <div class="search-wrapper">
+                <input type="search" id="input-box">
+                <label for="search">
+                    <ion-icon name="search-outline"></ion-icon>
+                </label>
+            </div>
+            <div class="result-box">
+
+            </div>
         </div>
-        <span>
+        <span onclick="openNav()">
             <ion-icon name="menu-outline"></ion-icon>
         </span>
+        <div class="dropdown" id="dropdown">
+            <span onclick="closeNav()">&times;</span>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="">How to download</a></li>
+            <li><a href="">Contact</a></li>
+            <div class="links">
+            <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+        </div>
+        </div>
+        
     </header>
+
+
+
+
 
     <main>
         <section>
             <h1>A Family Affair</h1>
-            <div class="container">
-                <img src="images (1).jpeg">
-
+            <div class="can">
+                <div>
+                    <img src="images (1).jpeg">
+                    <h6>Year of release:<span>2024</span></h6>
+                    <h6>Studio:<span>Netflix</span></h6>
+                    <h6>IMDb rating:<span>5.4/10</span></h6>
+                </div>
+                
             </div>
-            <span>
+
+            <span class="youtube">
                 <iframe width="70%" src="https://www.youtube.com/embed/Ytc2eifpiuQ?si=M1yvNM9xeEXeRgsh"
                     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                 encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-
@@ -81,7 +110,7 @@
                 <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
                 <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
                 <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
-                
+
             </div>
         </div>
         <h3>Developed and maintained by Monarch Creative Hub</h3>
@@ -91,15 +120,39 @@
 <style>
     h1 {
         font-size: 30px;
-        margin: 18px 0;
     }
 
-    section img {
+    section {
+        margin-top: 80px;
+    }
+
+    .can {
+        display: grid;
+        place-items: center;
+        margin-left: 17%;
+    }
+    
+    .can div img {
         margin-top: 20px;
         width: 80%;
     }
 
-    section span {
+    .can h6 {
+        font-size: 12px;
+        color: #845EC2;
+        
+    }
+    .can h6:nth-child(2) {
+        margin-top: 5px;
+    }
+    .can h6 span {
+        font-style: italic;
+        font-size: small;
+        margin-left: 6px;
+        color: #005067;
+    }
+
+    section .youtube {
         display: flex;
         justify-content: center;
         margin-top: 10px;
@@ -120,7 +173,7 @@
         justify-content: center;
         margin-top: 20px;
         padding: 10px 15px;
-        
+
     }
 
     main section a h3 {
@@ -139,8 +192,9 @@
             padding: 15px;
             margin: 20px 300px;
         }
-        
+
     }
+
     @media only screen and (min-width:650px) {
         iframe {
             height: 400px;
