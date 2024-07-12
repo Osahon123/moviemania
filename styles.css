@@ -15,6 +15,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 70px;
+    position: fixed;
+    top: 0;
 }
 
 header img {
@@ -34,6 +36,7 @@ header nav a {
     position: relative;
     padding-bottom: 22px;
 }
+
 /* header nav a:hover {
     border-bottom: #D6EFFA 1.5px solid;
 } */
@@ -51,7 +54,7 @@ header nav a::after {
 
 header nav a:hover::after {
     width: 70%;
-    
+
 }
 
 .active::after {
@@ -64,6 +67,7 @@ header nav a:hover::after {
     bottom: 15.5px;
 
 }
+
 header div {
     display: flex;
     align-items: center;
@@ -72,7 +76,7 @@ header div {
 header div input {
     border: none;
     padding: 5px;
-
+    font-size: 1rem;
 }
 
 header div label {
@@ -97,14 +101,17 @@ header span ion-icon {
     font-size: 40px;
     color: #D6EFFA;
 }
+
 .searcher {
     display: block;
-    
+
 }
+
 .result-box {
     position: absolute;
-    
+
 }
+
 .result-box ul {
     border-top: #845EC2 1px solid;
     padding: 15px 10px;
@@ -116,15 +123,71 @@ header span ion-icon {
     padding: 10px 10px;
     cursor: pointer;
 }
+
+.dropdown {
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 40px 60px;
+    display: none;
+    border-radius: 15px;
+    box-shadow: black 5px 5px 21px;
+}
+
+.dropdown span {
+    position: absolute;
+    right: 15px;
+    top: -6px;
+    font-size: 60px;
+}
+
+.dropdown li {
+    list-style: none;
+    margin: 17px 0;
+    display: block;
+    text-align: center;
+}
+
+.dropdown a {
+    text-decoration: none;
+    display: inline;
+    font-weight: 500;
+    font-size: 20px;
+    color: #005067;
+}
+
+.dropdown a:hover {
+    border-bottom: #005067 solid 1.5px;
+}
+.dropdown .links {
+    display: flex;
+    justify-content: center;
+}
+.dropdown .links a {
+    font-size: 30px;
+    margin: 10px;
+}
+.dropdown .links a ion-icon {
+    color: #005067;
+    text-align: center;
+    padding: 7px;
+    border-radius: 50%;
+    border: #845EC2 1px solid;
+}
+.dropdown .links a ion-icon:hover {
+    background-color: #005067;
+    color: #fff;
+}
 /* HEADER */
 
 
 
 /* MAIN */
 main {
-    margin: 20px 0;
+    margin: 120px 0 20px 0;
     padding: 0 70px;
 }
+
 main section h1 {
     color: #005067;
 }
@@ -134,12 +197,14 @@ main section .container {
     justify-content: center;
     flex-wrap: wrap;
 }
+
 main section .container .movie-cards {
     box-shadow: #005067 0px 2px 6px;
     margin: 10px;
     color: #005067;
     text-decoration: none;
 }
+
 main section .container .movie-cards img {
     width: 180px;
 }
@@ -152,6 +217,32 @@ main section .container .movie-cards h5 {
 
 
 
+
+/* ARTICLE PAGE */
+.articles {
+    display: flex;
+    justify-content: center
+}
+
+.articles a {
+    text-decoration: none;
+    display: flex;
+    width: 30%;
+    margin: 10px;
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: black 1px 1px 3px;
+}
+
+.articles a img {
+    width: 100px;
+}
+.articles a h3 {
+    font-size: 15px;
+    margin-left: 6px;
+    background-color: #fff;
+}
+/* ARTICLE PAGE */
 
 
 
@@ -196,6 +287,7 @@ footer .container div p {
     background-color: transparent;
 
 }
+
 footer .container div:nth-child(2) a {
     background-color: #845EC2;
     color: #fff;
@@ -204,22 +296,22 @@ footer .container div:nth-child(2) a {
     line-height: 1.8;
     font-style: italic;
 }
-footer .container div:nth-child(2) a:hover {
-    border-bottom: #fff 1.5px solid;
-}
+
 footer .container .links a {
     background-color: #845EC2;
 }
+
 footer .container .links a ion-icon {
-    border: #fff solid 1.4px; 
-    padding: 7px; 
+    border: #fff solid 1.4px;
+    padding: 7px;
     border-radius: 50%;
     color: #fff;
-    font-size: 1.4rem; 
-    background-color:#845EC2;
+    font-size: 1.4rem;
+    background-color: #845EC2;
     margin: 5px;
     transition-duration: 300ms;
 }
+
 footer .container .links a ion-icon:hover {
     background-color: #fff;
     color: #845EC2;
@@ -268,6 +360,16 @@ footer h3 {
     }
 
     /* HEADER */
+    main {
+        margin: 80px 0 20px 0;
+    }
+    .articles a {
+        width: 40%;
+    }
+
+    header div input {
+        padding: 15px;
+    }
 
     /* FOOTER */
 
@@ -288,34 +390,69 @@ footer h3 {
     /* HEADER */
 
 
+    /* MAIN */
+    main {
+        padding: 0 10px;
+        margin: 70px 0 20px 0;
+    }
+    .articles a {
+        width: 40%;
+    }
+    /* MAIN */
+
 
     /* FOOTER */
     footer {
         padding: 0px 10px;
     }
+
     footer .container {
         display: block;
     }
+
     footer .container div {
         margin-top: 15px;
     }
     footer h3 {
         font-size: 12px;
     }
+
     footer h4 {
         font-size: 9px;
     }
+
     /* FOOTER */
 }
 
 @media only screen and (max-width:430px) {
+
     /* HEADER */
     header {
         padding: 10px 10px;
     }
 
     /* HEADER */
-
+    main h1 {
+        font-size: 20px;
+        text-align: center;
+        text-decoration: underline;
+    }
+    .articles {
+        flex-wrap: wrap;
+    }
+    .articles a {
+        width: 100%;
+    }
 
     /* FOOTER */
+    footer h4 {
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width:390px) {
+    header div input {
+        padding: 15px;
+        width: 150px;
+    }
 }
